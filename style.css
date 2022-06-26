@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+.nav {
+    background-color: lemonchiffon;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    width: 30%;
+
+    border-right: 3px solid lightcoral;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: lightblue;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.nav ul li:last-child{
+    border: none;
+}
+
+
+
+
+
+
+
+.banner h1 {
+    color: lightslategrey;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: lightslategrey;
+    text-align: center;
+    text-decoration: underline;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+.imageshow {
+    height: 500px;
+    width: 90%;
+    background-color: lavender;
+    margin: 0 auto;
+
+    background-image: url('images/banner2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: imageshow 18s linear infinite;
+}
+
+@keyframes imageshow{
+    0% {
+        background-image: url('images/banner2.jpg');
+    }
+    50% {
+        background-image: url('images/banner3.jpg');
+    }
+    75% {
+        background-image: url('images/banner.jpeg');
+    }
+    100% {
+        background-image: url('images/banner2.jpg');
+    }
+}
+
+
+
+
+
+
+.inner p{
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.planetcard {
+    width: 250px;
+    height: 450px;
+    background-color: lavender;
+    border-radius: 15%;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid lightcoral;
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.planetcard img {
+    width: 248px;
+    height: 248px;
+    text-align: center;
+    border-radius: 10% 10% 0 0;
+}
+
+.planetcard h3, ul, li {
+    text-align: center;
+    color: lightslategray;
+}
+
+.planetcard ul{
+    padding: 25px;
+
+}
+
+.planetcard {
+    transition: all 0.5s linear;
+}
+
+.planetcard:hover {
+    transform: scale(1.03);
+}
+
+
+
+
+
+
+.outer {
+    padding: 20px;
+}
+
+thead {
+    background-color: lemonchiffon;
+    height: 50px;
+    color: lightslategray;
+}
+
+tbody tr {
+    background-color: lightslategray;
+    height: 40px;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: lightblue;
+}
+
+tbody tr img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.footer h4 {
+    font-size: larger;
+    text-align: center;
+    color: lightslategrey;
+}
